@@ -176,15 +176,6 @@ public partial class Controls_HtmlEditor : System.Web.UI.UserControl
 
     #region 控件属性
 
-    /// <summary>
-    /// 样式
-    /// </summary>
-    public string StyleCSS
-    {
-        get { return _style; }
-        set { _style = value; }
-    }
-    private string _style;
 
     /// <summary>
     /// 路径(默认为../kindeditor),只设置一次就可以。
@@ -223,7 +214,7 @@ public partial class Controls_HtmlEditor : System.Web.UI.UserControl
     protected string ReadOnlyStr = string.Empty;
 
     /// <summary>
-    /// 是否可以浏览服务器文件(浏览图片，视频等文件)
+    /// true时可以浏览服务器文件(浏览图片，视频等文件)
     /// </summary>
     public bool AllowFileManager
     {
